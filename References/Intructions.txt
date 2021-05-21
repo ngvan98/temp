@@ -1,0 +1,29 @@
+TẠO ENVIRONMENT CHO DJANGO
+	PREQUISITE: sudo apt-get update --> sudo apt install python3-venv 
+	S1: python3 -m venv my-project-env
+ 	S2: source my-project-env/bin/activate
+	
+
+TẠO REQUITEMENTS.TXT
+	S1: pip3 freeze > requitements.txt
+	S2: pip3 install -r requirements.txt
+
+Tạo project mới: django-admin startproject crawler_news
+
+Tạo thêm một appication: python3 manage.py startapp crawler_app
+
+Tạo migrations:
+	- python3 manage.py makemigrations <app_name>
+	- python3 manage.py migrate --database=<db_name>
+ 
+Tạo migration cho từng app:
+
+    +DB_DOMAIN1
+	 python3 manage.py makemigrations domain1
+	 python3 manage.py migrate domain1 --database=db_domain1
+
+    +DB_crawler
+	 python3 manage.py makemigrations crawler_app
+	 python3 manage.py migrate crawler_app--database=db_crawler
+    
+    python3 manage.py migrate

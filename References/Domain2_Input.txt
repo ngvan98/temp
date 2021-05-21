@@ -1,0 +1,71 @@
+domain
+{"id": "DM02", "description" : "Du an tieng Viet"}
+<end-table>
+sitemaster
+{"name":"NewsZing", "link":"https://zingnews.vn/", "responseType" : "HTML"}
+<end-table>
+attribute
+{"fieldName" : "TITLE", "selector" : "//h1[@class='the-article-title']", "typeSelector" : "HTML", "findJson" : "None"}
+{"fieldName" : "ABSTRACT", "selector" : "//section[1]/p[1]", "typeSelector" : "HTML", "findJson" : "None"}
+{"fieldName" : "AUTHOR", "selector" : "author/name/", "typeSelector" : "JSON", "findJson" : "application/ld+json"}
+{"fieldName" : "DATA_TIME_STR", "selector" : "datePublished/","typeSelector" : "JSON", "findJson" : "application/ld+json"}
+{"fieldName" : "CONTENT", "selector" : "//div[contains(@class,'the-article-body')]", "typeSelector" : "HTML", "findJson" : "None"}
+{"fieldName" : "TAGS", "selector" : "//article/section[1]/p[2]/*[self::strong or self::a ]", "typeSelector" : "HTML", "findJson" :"None"}
+<end-table>
+cluster
+{"name" : "NewsZing - The thao", "sitemasterFK": "https://zingnews.vn/", "description":"..."}
+{"siteName" : "Bong Da VietNam", "siteLink" : "https://zingnews.vn/bong-da-viet-nam.html", "sourceType" : "NEWS", "pageParam" : "https://zingnews.vn/bong-da-viet-nam/trang[NEXT_PAGE].html", "pageParamRule" : "None", "scheduleMinute" : "25", "articleLinkSelector" : "//section/section/div/article/header/p[1]/a"}
+{"siteName" : "Bong Da Anh", "siteLink" : "https://zingnews.vn/bong-da-anh.html", "sourceType" : "NEWS", "pageParam" : "https://zingnews.vn/bong-da-anh/trang[NEXT_PAGE].html", "pageParamRule" : "None", "scheduleMinute" : "25", "articleLinkSelector" : "//section/section/div/article/header/p[1]/a"}
+<end-cluster>
+{"name" : "NewsZing - Giai tri", "sitemasterFK": "https://zingnews.vn/", "description":"..."}
+{"siteName" : "Am nhac", "siteLink" : "https://zingnews.vn/am-nhac.html", "sourceType" : "NEWS", "pageParam" : "https://zingnews.vn/am-nhac/trang[NEXT_PAGE].html", "pageParamRule" : "None", "scheduleMinute" : "25", "articleLinkSelector" : "//section/section/div/article/header/p[1]/a"}
+<end-cluster>
+<end>
+
+domain
+{"id": "DM02", "description" : "Du an tieng Viet"}
+<end-table>
+sitemaster
+{"name":"VietNamPlus", "link":"https://www.vietnamplus.vn/", "responseType" : "HTML"}
+<end-table>
+attribute
+{"fieldName" : "TITLE", "selector" : "//div[1]/h1", "typeSelector" : "HTML", "findJson" : "None"}
+{"fieldName" : "ABSTRACT", "selector" : "//div[@class='details__header']/h1", "typeSelector" : "HTML", "findJson" : "None"}
+{"fieldName" : "AUTHOR", "selector" : "//span[@class='cms-author']", "typeSelector" : "HTML", "findJson" : "None"}
+{"fieldName" : "DATA_TIME_STR", "selector" : "//div[@class='source']/time","typeSelector" : "HTML", "findJson" : "None"}
+{"fieldName" : "CONTENT", "selector" : "//div[contains(@class,'article-body')]", "typeSelector" : "HTML", "findJson" : "None"}
+{"fieldName" : "TAGS", "selector" : "//div[1]/div[3]/a", "typeSelector" : "HTML", "findJson" :"None"}
+<end-table>
+cluster
+{"name" : "VietNamPlus - Chinh tri", "sitemasterFK": "https://www.vietnamplus.vn/", "description":"..."}
+{"siteName" : "chinh tri", "siteLink" : "https://www.vietnamplus.vn/chinhtri.vnp", "sourceType" : "NEWS", "pageParam" : "https://www.vietnamplus.vn/chinhtri/trang[NEXT_PAGE].vnp", "pageParamRule" : "None", "scheduleMinute" : "30", "articleLinkSelector" : "//html/body/div/div/div/div/div[2]/div[2]/div[1]/section/div/article/h2/a"}
+<end-cluster>
+{"name" : "VietNamPlus - Phuong tien van chuyen", "sitemasterFK": "https://www.vietnamplus.vn/", "description":"..."}
+{"siteName" : "O to - xe may", "siteLink" : "https://www.vietnamplus.vn/otoxemay.vnp", "sourceType" : "NEWS", "pageParam" : "https://www.vietnamplus.vn/otoxemay/trang[NEXT_PAGE].vnp", "pageParamRule" : "None", "scheduleMinute" : "30", "articleLinkSelector" : "//html/body/div/div/div/div/div[2]/div[2]/div[1]/section/div/article/h2/a"}
+{"siteName" : "Moi truong", "siteLink" : "https://www.vietnamplus.vn/moitruong.vnp", "sourceType" : "NEWS", "pageParam" : "https://www.vietnamplus.vn/moitruong/trang[NEXT_PAGE].vnp", "pageParamRule" : "None", "scheduleMinute" : "30", "articleLinkSelector" : "//html/body/div/div/div/div/div[2]/div[2]/div[1]/section/div/article/h2/a"}
+<end-cluster>
+<end>
+
+domain
+{"id": "DM02", "description" : "Du an tieng Viet"}
+<end-table>
+sitemaster
+{"name":"Vnexpress", "link":"https://vnexpress.net/", "responseType" : "HTML"}
+<end-table>
+attribute
+{"fieldName" : "TITLE", "selector" : "//h1", "typeSelector" : "HTML", "findJson" : "None"}
+{"fieldName" : "ABSTRACT", "selector" : "//section[4]/div/div[2]/p", "typeSelector" : "HTML", "findJson" : "None"}
+{"fieldName" : "AUTHOR", "selector" : "//p[9]/strong/", "typeSelector" : "HTML", "findJson" : "None"}
+{"fieldName" : "DATA_TIME_STR", "selector" : "//span[@class='date']","typeSelector" : "HTML", "findJson" : "None"}
+{"fieldName" : "CONTENT", "selector" : "//article", "typeSelector" : "HTML", "findJson" : "None"}
+<end-table>
+cluster
+{"name" : "Vnexpress - Chinh tri", "sitemasterFK": "https://vnexpress.net/", "description":"..."}
+{"siteName" : "Quan su", "siteLink" : "https://vnexpress.net/the-gioi/quan-su", "sourceType" : "NEWS", "pageParam" : "https://vnexpress.net/the-gioi/quan-su-p[NEXT_PAGE]", "pageParamRule" : "None", "scheduleMinute" : "35", "articleLinkSelector" : "//article/h2/a"}
+{"siteName" : "Chinh tri", "siteLink" : "https://vnexpress.net/thoi-su/chinh-tri", "sourceType" : "NEWS", "pageParam" : "https://vnexpress.net/thoi-su/chinh-tri-p[NEXT_PAGE]", "pageParamRule" : "None", "scheduleMinute" : "35", "articleLinkSelector" : "//article/h2/a"}
+<end-cluster>
+{"name" : "Vnexpress - Giai tri", "sitemasterFK": "https://vnexpress.net/", "description":"..."}
+{"siteName" : "Gioi sao", "siteLink" : "https://vnexpress.net/giai-tri/gioi-sao", "sourceType" : "NEWS", "pageParam" : "https://vnexpress.net/giai-tri/gioi-sao-p[NEXT_PAGE]", "pageParamRule" : "None", "scheduleMinute" : "35", "articleLinkSelector" : "//article/h2/a"}
+{"siteName" : "Phim", "siteLink" : "https://vnexpress.net/giai-tri/phim", "sourceType" : "NEWS", "pageParam" : "https://vnexpress.net/giai-tri/phim-p[NEXT_PAGE]", "pageParamRule" : "None", "scheduleMinute" : "35", "articleLinkSelector" : "//article/h2/a"}
+<end-cluster>
+<end>

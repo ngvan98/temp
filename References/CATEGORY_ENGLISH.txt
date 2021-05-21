@@ -1,0 +1,22 @@
+ INSERT INTO public."DB2_CATEGORY"(
+ 	id, "nameCategory")
+ 	VALUES (1, 'SPORTS');
+	
+ INSERT INTO public."DB2_CATEGORY"(
+ 	id, "nameCategory")
+ 	VALUES (2, 'POLITIC');
+
+ INSERT INTO public."DB2_CATEGORY"(
+ 	id, "nameCategory")
+ 	VALUES (3, 'TECHNOLOGY');
+
+INSERT INTO public."DB2_CATEGORY"(
+ 	id, "nameCategory")
+	VALUES (4, 'ENTERTAINMENT');
+
+INSERT INTO public."DB2_CATEGORY"(
+	id, "nameCategory")
+	VALUES (5, 'BUSINESS');
+INSERT INTO public."DB2_CATEGORY"(
+	id, "nameCategory")
+	VALUES (6, 'UNKNOWN');

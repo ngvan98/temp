@@ -1,0 +1,118 @@
+Step 1 : SSH giavan@103.124.92.104
+Step 2 : TK : giavan MK: gia@van
+Step 3: cd myproject
+Step 4 : python3 manage.py runserver 0.0.0.0:9001
+Step 5 : Go to browser and type 103.124.92.104:9001 
+
+ELASTIC SERVER: http://103.124.92.104:1133/
+
+SFTP
+{
+    "name": "Server LAB",
+    "host": "103.124.92.104",
+    "protocol": "sftp",
+    "port": 22,
+    "username": "giavan",
+    "remotePath": "/home/giavan",
+    "uploadOnSave": true
+}
+
+
+giavan@ctr673005:~$ ls
+duan_crawler  duan_crawler.zip
+giavan@ctr673005:~$ cd duan_crawler/
+giavan@ctr673005:~/duan_crawler$ ls
+attributes_db.csv  categories.csv  crawler_news  page.txt  sites.csv  site_sumary.txt
+giavan@ctr673005:~/duan_crawler$ ls -lh
+total 112K
+-rw-rw-r-- 1 giavan giavan 2.3K Mar  4 16:54 attributes_db.csv
+-rw-rw-r-- 1 giavan giavan 2.8K Mar  4 09:12 categories.csv
+drwxrwxr-x 7 giavan giavan 4.0K Mar 22 08:29 crawler_news
+-rw-rw-r-- 1 giavan giavan 2.9K Mar  5 12:40 page.txt
+-rw-rw-r-- 1 giavan giavan  56K Mar  5 17:17 sites.csv
+-rw-rw-r-- 1 giavan giavan  37K Mar 22 08:25 site_sumary.txt
+giavan@ctr673005:~/duan_crawler$ du --max-depth=2 .
+256     ./crawler_news/crawler_app
+1576    ./crawler_news/References
+56      ./crawler_news/crawler_news
+178004  ./crawler_news/domain1_app
+417944  ./crawler_news/crawler-project-env
+597992  ./crawler_news
+598104  .
+giavan@ctr673005:~/duan_crawler$ du --max-depth=2 . -lh
+256K    ./crawler_news/crawler_app
+1.6M    ./crawler_news/References
+56K     ./crawler_news/crawler_news
+174M    ./crawler_news/domain1_app
+409M    ./crawler_news/crawler-project-env
+584M    ./crawler_news
+585M    .
+giavan@ctr673005:~/duan_crawler$ cd crawler_news/crawler-project-env/
+giavan@ctr673005:~/duan_crawler/crawler_news/crawler-project-env$ ls
+bin  include  lib  lib64  pyvenv.cfg  share
+giavan@ctr673005:~/duan_crawler/crawler_news/crawler-project-env$ ls -lh
+total 24K
+drwxrwxr-x 3 giavan giavan 4.0K Mar 22 08:27 bin
+drwxrwxr-x 2 giavan giavan 4.0K Mar 16 10:55 include
+drwxrwxr-x 3 giavan giavan 4.0K Mar 22 08:27 lib
+drwxrwxr-x 2 giavan giavan 4.0K Mar 16 10:55 lib64
+-rw-rw-r-- 1 giavan giavan   69 Mar 16 10:55 pyvenv.cfg
+drwxrwxr-x 3 giavan giavan 4.0K Mar 22 08:28 share
+giavan@ctr673005:~/duan_crawler/crawler_news/crawler-project-env$ cd
+giavan@ctr673005:~$ cd crawler_news/crawler-project-env/
+-bash: cd: crawler_news/crawler-project-env/: No such file or directory
+giavan@ctr673005:~$ cd ~/duan_crawler/crawler_news/crawler-project-env/
+giavan@ctr673005:~/duan_crawler/crawler_news/crawler-project-env$ ls
+bin  include  lib  lib64  pyvenv.cfg  share
+giavan@ctr673005:~/duan_crawler/crawler_news/crawler-project-env$ ls bin
+activate       chardetect       easy_install      f2py3    pip     __pycache__        tqdm
+activate.csh   django-admin     easy_install-3.6  f2py3.6  pip3    pyppeteer-install
+activate.fish  django-admin.py  f2py              nltk     pip3.6  sqlformat
+giavan@ctr673005:~/duan_crawler/crawler_news/crawler-project-env$ ./bin/python
+-bash: ./bin/python: No such file or directory
+giavan@ctr673005:~/duan_crawler/crawler_news/crawler-project-env$ ls lib
+python3.6
+giavan@ctr673005:~/duan_crawler/crawler_news/crawler-project-env$ ./lib/python3.6/
+-bash: ./lib/python3.6/: Is a directory
+giavan@ctr673005:~/duan_crawler/crawler_news/crawler-project-env$ ls./lib/python3.6/
+-bash: ls./lib/python3.6/: No such file or directory
+giavan@ctr673005:~/duan_crawler/crawler_news/crawler-project-env$ ls ./lib/python3.6/
+site-packages
+giavan@ctr673005:~/duan_crawler/crawler_news/crawler-project-env$ cd
+giavan@ctr673005:~$ ls
+duan_crawler  duan_crawler.zip
+giavan@ctr673005:~$ mysql -u root -p
+Enter password:
+ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+giavan@ctr673005:~$ mysql -u root -p
+Enter password:
+ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+giavan@ctr673005:~$ mysql -u root -p
+Enter password:
+ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+giavan@ctr673005:~$ mysql -u root -pla
+mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+giavan@ctr673005:~$ mysql -u root -pla12A$hong
+mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+giavan@ctr673005:~$ mysql -u root -p
+Enter password:
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 63974
+Server version: 5.7.33-0ubuntu0.18.04.1 (Ubuntu)
+
+Copyright (c) 2000, 2021, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> create database giavan;
+Query OK, 1 row affected (0.00 sec)
+
+mysql> use giavan;
+Database changed
+mysql> mysql>

@@ -1,0 +1,177 @@
+id,root_site_name,fieldName,selector
+1,zing,TITLE,//h1/text()
+2,zing,ABSTRACT,//section[1]/p[1]/text()
+3,zing,CONTENT,"//div[contains(@class,'the-article-body')]"
+4,zing,DATA_TIME,//header/ul/li[2]/text()
+5,zing,AUTHOR,//header/ul/li[1]/a/text()
+6,zing,TAGS,//article/section[1]/p[2]/*[self::strong or self::a ]/text()
+7,vietnamplus,TITLE,//div[1]/h1/text()
+8,vietnamplus,ABSTRACT,//div[@class='details__header']/h1/text()
+9,vietnamplus,CONTENT,"//div[contains(@class,'article-body')]"
+10,vietnamplus,DATA_TIME,//div[@class='source']/time/text()
+11,vietnamplus,AUTHOR,//span[@class='cms-author']/text()
+12,vietnamplus,TAGS,//div[1]/div[3]/a/text()
+13,baotintuc,TITLE,//h1/text()
+14,baotintuc,ABSTRACT,//div[1]/div[3]/h2/text()
+15,baotintuc,CONTENT,"//div[contains(@class,'contents')]"
+16,baotintuc,DATA_TIME,//div[2]/div[1]/span/text()
+17,baotintuc,AUTHOR,//div[2]/strong/text()
+18,baotintuc,TAGS,//div[@class='tags']/a/text()
+19,vov,TITLE,//div[3]/div/span/text()
+20,vov,ABSTRACT,//h4/div/text()
+21,vov,CONTENT,"//div[contains(@class,'article-content')]"
+22,vov,DATA_TIME,//article/div[4]/div[1]/text()
+23,vov,AUTHOR,"//div[@class=""row article-author""]/div/text()"
+24,vov,TAGS,//article/div[8]/div/div/a/text()
+25,vtv,TITLE,//h1/text()
+26,vtv,AUTHOR,//span[@class='author']/text()
+27,vtv,DATA_TIME,//div[@class='time-value']/text()
+28,vtv,CONTENT,"//div[contains(@class,'entry-body')]"
+29,vtv,ABSTRACT,//h2[@class='detail-post--except-text']/text()
+30,vtv,TAGS,//div[@class='new-tags']/ul/li/a/text()
+31,vnexpress,TITLE,//h1/text()
+32,vnexpress,DATA_TIME,//span[@class='date']/text()
+33,vnexpress,ABSTRACT,//section[4]/div/div[2]/p/text()
+34,vnexpress,CONTENT,//article
+35,vnexpress,AUTHOR,//p[9]/strong/text()
+36,Báo chính ph?,TITLE,//h1/text()
+37,Báo chính ph?,ABSTRACT,//div[@class='summary']/p/text()
+38,Báo chính ph?,CONTENT,"//div[contains(@class,'article-body')]"
+39,Báo chính ph?,DATA_TIME,//p[@class='meta']/text()
+40,Báo chính ph?,TAGS,//span[@class='word']/a/text()
+41,C?ng thông tin ?i?n t? ?ài truy?n hình vi?t nam,TITLE,//h1/text()
+42,C?ng thông tin ?i?n t? ?ài truy?n hình vi?t nam,DATA_TIME,//div[@class='time-detail']/div[@class='pull-left']/text()[3]
+43,C?ng thông tin ?i?n t? ?ài truy?n hình vi?t nam,AUTHOR,"//div[@class=""pull-left""]/b/text()"
+44,C?ng thông tin ?i?n t? ?ài truy?n hình vi?t nam,CONTENT,"//div[contains(@class,'detail-news')]"
+45,B? công an,CONTENT,//div[@class='detail']
+46,B? công an,TITLE,//h1/text()
+47,B? công an,ABSTRACT,//div[2]/div/div[1]/div[1]/div/div[1]/div/div[2]/div[2]/text()
+48,B? công an,DATA_TIME,//div[2]/div/div[1]/div[1]/div/div[1]/div/div[2]/div[1]/div[1]/text()
+49,B? công an,AUTHOR,//div[2]/div[5]/text()
+50,B? ngo?i giao,TITLE,//b/span/text()
+51,B? ngo?i giao,CONTENT,//div[@class='plain']
+52,B? t? pháp,TITLE,//h1/text()
+53,B? t? pháp,ABSTRACT,//div[2]/div[2]/div/div[3]/text()
+54,B? t? pháp,CONTENT,//div[@class='news-content box-content-news-detail']
+55,B? t? pháp,DATA_TIME,//div[2]/div[2]/div/span/text()
+56,B? t? pháp,AUTHOR,//div[2]/strong/text()
+57,C? s? d? li?u qu?c gia v? v?n b?n pháp lu?t,CONTENT,//tbody/tr/td/div/b/text() | //table[1]/tbody/tr/td/div[3]/text() | //div[3]/i/text() | //div[2]/p/*[self::strong or self::em]/text() | //div[2]/p/text() | //td/p/strong/text() |  //div[3]/table/tbody
+58,kenh14,TITLE,//h1/text()
+59,kenh14,ABSTRACT,//h2/text()
+60,kenh14,DATA_TIME,//div[2]/span[3]/text()
+61,kenh14,TAGS,//div[2]/ul/li/a/text()
+62,kenh14,AUTHOR,//span[2]/a |  //div[2]/div/div/div[1]/div[1]/div[2]/span[1]/text()
+63,kenh14,CONTENT,//div[@class='knc-content']
+64,B? Lao ??ng – Th??ng binh và Xã h?i,TITLE,//div[1]/h1/text()
+65,B? Lao ??ng – Th??ng binh và Xã h?i,ABSTRACT,//div[3]/p[1]/text()
+66,B? Lao ??ng – Th??ng binh và Xã h?i,DATA_TIME,//div[1]/p/text()
+67,B? Lao ??ng – Th??ng binh và Xã h?i,CONTENT,//div[3]/p/text() | //div[1]/div/div/div[1]/div/div/div/div/div[1]/div[1]/div[3]/div/text() | //b/text()
+68,B? Lao ??ng – Th??ng binh và Xã h?i,HEAD_PARAGRAPH,//b/text()
+69,b? giao thông v?n t?i,TITLE,//h1/text()
+70,b? giao thông v?n t?i,ABSTRACT,//div[3]/div/p/text()
+71,b? giao thông v?n t?i,DATA_TIME,//div[8]/div/div[1]/div/div/div/div/div[1]/div[1]/div[2]/div/div[1]/span/text()
+72,b? giao thông v?n t?i,CONTENT,"//div[contains(@id,'divArticleDescription2')]"
+73,b? giao thông v?n t?i,AUTHOR,//p/font/text()
+74,B? Xây d?ng,TITLE,//h1/text()
+75,B? Xây d?ng,ABSTRACT,//div[4]/p/text()
+76,B? Xây d?ng,DATA_TIME,//div[2]/span/text()
+77,B? Xây d?ng,CONTENT,"//div[contains(@id,'divArticleDescription2')]"
+78,B? Xây d?ng,AUTHOR,//p/font/text()
+79,VI?T - LÀO,TITLE,//h2/text()
+80,VI?T - LÀO,ABSTRACT,//strong/span/text()
+81,VI?T - LÀO,CONTENT,//div[@class='post-content detail-post']
+82,VI?T - LÀO,AUTHOR,//div[6]/span/strong/text()
+83,B? Giáo d?c và ?ào t?o,TITLE,//h1/text()
+84,B? Giáo d?c và ?ào t?o,ABSTRACT,//div[2]/p/text()
+85,B? Giáo d?c và ?ào t?o,DATA_TIME,//div[2]/div/div[1]/div/div[1]/p/span[1]/text()
+86,B? Giáo d?c và ?ào t?o,CONTENT,//div[@class='detail']
+87,B? Giáo d?c và ?ào t?o,AUTHOR,//p[@class='author']/text()
+88,https://huunghivietlao.thoidai.com.vn/,TITLE,//h1/text()
+89,https://huunghivietlao.thoidai.com.vn/,ABSTRACT,//p[3]/font/font/text() | //p[@class='detail-sapo']/text()
+90,https://huunghivietlao.thoidai.com.vn/,CONTENT,//div[@class='item-content']
+91,https://huunghivietlao.thoidai.com.vn/,DATA_TIME,//span[@class='datetime']/span[2]/text()
+92,huunghivietlao.thoidai.com.vn,AUTHOR,//strong/text()
+93,B? THÔNG TIN VÀ TRUY?N THÔNG,TITLE,//h1[@class='title-news']/text()
+94,B? THÔNG TIN VÀ TRUY?N THÔNG,DATA_TIME,//div[@class='post-date f12']/text()
+95,B? THÔNG TIN VÀ TRUY?N THÔNG,ABSTRACT,//div[2]/div[@class='news_detail']/div[1]/p/text()
+96,B? THÔNG TIN VÀ TRUY?N THÔNG,CONTENT,//div[@class='news_detail']
+97,B? THÔNG TIN VÀ TRUY?N THÔNG,AUTHOR,//strong/text()
+98,B? THÔNG TIN VÀ TRUY?N THÔNG,VIEWCOUNT,//div[1]/p[3]/text()
+99,B? THÔNG TIN VÀ TRUY?N THÔNG,TAGS,//p[4]/a/text()
+100,b? nông nghi?p và phát tri?n nông thôn,TITLE,//h4/text()
+101,b? nông nghi?p và phát tri?n nông thôn,ABSTRACT,//div[@class='details']/p[1]/text()
+102,b? nông nghi?p và phát tri?n nông thôn,CONTENT,//div[@class='htmlcontent']
+103,b? nông nghi?p và phát tri?n nông thôn,AUTHOR,//section/div/div[1]/div/div[1]/div[2]/div/p[2]
+104,b? nông nghi?p và phát tri?n nông thôn,TAGS,//div/a/span/text()
+105,Vietnam - Lao #lao,TITLE,//h2/font/font/text()
+106,Vietnam - Lao #lao,ABSTRACT,//div/span/strong/font/font/text()
+107,Vietnam - Lao #lao,IMAGE_DESC,//span/em/font/font/text()
+108,Vietnam - Lao #lao,CONTENT,//div[@class='post-content detail-post']
+109,Vietnam - Lao #lao,AUTHOR,//p[3]/span/strong/font/font/text()
+110,b? k? ho?ch và ??u t?,DATA_TIME,//div[@class='myforumtime']/text()
+111,b? k? ho?ch và ??u t?,TITLE,//div[@class='mycontentheader']/text()
+112,b? k? ho?ch và ??u t?,ABSTRACT,//div[@class='mycontentsummary']/text()
+113,b? k? ho?ch và ??u t?,CONTENT,//div[@class='mycontenttext']
+114,b? k? ho?ch và ??u t?,AUTHOR,//div[@class='mysource']/b/text()
+115,b? k? ho?ch và ??u t?,VIEWCOUNT,//div[@class='mytool']/ul/text()
+116,b? k? ho?ch và ??u t?,IMAGE_DESC,//em/text()
+117,b? n?i v?,TITLE,//div/div[3]/div/div[1]/h1/text()
+118,b? n?i v?,ABSTRACT,//div[@class='des']/text()
+119,b? n?i v?,CONTENT,//div[@class='content']
+120,b? n?i v?,AUTHOR,//div[@class='content']/b/text()
+121,b? n?i v?,DATA_TIME,//p[@class='date']/text()
+122,b? n?i v?,VIEWCOUNT,//div[1]/div[1]/div/ul/li[6]/text()
+123,b? n?i v?,IMAGE_DESC,//i/text()
+124,b? y t?,TITLE,//div/div[1]/div/div/div/div/div/div[1]/div[1]/h3/text()
+125,b? y t?,DATA_TIME,//div[2]/div[1]/p/text()
+126,b? y t?,CONTENT,//div[@class='journal-content-article']
+127,b? y t?,HEAD_PARAGRAPH,//em/span/text()
+128,b? y t?,IMAGE_DESC,//tbody/tr[2]/td/p/span/span/span/text()
+129,b? khoa h?c và công ngh?,DATA_TIME,//span[@class='News_Time_Post']/text()
+130,b? khoa h?c và công ngh?,TITLE,//h1/text()
+131,b? khoa h?c và công ngh?,ABSTRACT,//div[@class='Around_News_Content']/div[1]/div[4]/text()
+132,b? khoa h?c và công ngh?,CONTENT,"//div[contains(@id, 'divArticleDescription2')]"
+133,b? khoa h?c và công ngh?,AUTHOR,//div[@class='Div_Share_Author']/div[1]/p[1]/font/text()
+134,b? khoa h?c và công ngh?,VIEWCOUNT,//p[@class='luottruycap']/text()
+135,b? khoa h?c và công ngh?,IMAGE_DESC,//em/text()
+136,"B? V?n hóa, Th? thao và Du l?ch",TITLE,//h2/text()
+137,"B? V?n hóa, Th? thao và Du l?ch",DATA_TIME,//div[2]/div/div[2]/span/text()
+138,"B? V?n hóa, Th? thao và Du l?ch",ABSTRACT,//p[@class='sapo']/text()
+139,"B? V?n hóa, Th? thao và Du l?ch",CONTENT,//div[@class='entry-body']
+140,"B? V?n hóa, Th? thao và Du l?ch",AUTHOR,//p[@class='author']/text()
+141,b? tài nguyên và môi tr??ng,TITLE,//h4[@class='news-tieude']/text()
+142,b? tài nguyên và môi tr??ng,DATA_TIME,//div[2]/div/div[2]/p[1]/span[1]/em/text()
+143,b? tài nguyên và môi tr??ng,ABSTRACT,//p[@class='news-tomtat']/text()
+144,b? tài nguyên và môi tr??ng,CONTENT,//div[@class='news-content']
+145,b? tài nguyên và môi tr??ng,AUTHOR,//p[@class='news-nguontin'][2]/text()
+146,v?n phòng chính ph?,TITLE,//h1[@class='title']/span/text()
+147,v?n phòng chính ph?,DATA_TIME,//div[@class='article']/p[@class='date']/span/text()
+148,v?n phòng chính ph?,ABSTRACT,//div[@class='sapo']/p/text()
+149,v?n phòng chính ph?,CONTENT,//div[@class='article']
+150,v?n phòng chính ph?,AUTHOR,//strong/text()
+151,v?n phòng chính ph?,IMAGE_DESC,//tr[2]/td/p/font/text()
+152,ngân hàng nhà n??c vi?t nam,DATA_TIME,//div[2]/div[1]/span/label/text()
+153,ngân hàng nhà n??c vi?t nam,ABSTRACT,//div[@class='ctt-comments']/text()
+154,ngân hàng nhà n??c vi?t nam,TITLE,//div[@class='x28v']/text()
+155,ngân hàng nhà n??c vi?t nam,AUTHOR,(//div[@class='ctt-docContent']/div/p/span/text())[last()]
+156,ngân hàng nhà n??c vi?t nam,CONTENT,//div[@class='ctt-docContent']
+157,thanh tra chính ph?,TITLE,//h1/text()
+158,thanh tra chính ph?,DATA_TIME,//p[@class='date-post']/text()
+159,thanh tra chính ph?,CONTENT,//div[@class='asset-full-content']
+160,thanh tra chính ph?,IMAGE_DESC,//strong[@class='change-size']/p/text()
+161,ngân hàng nhà n??c vi?t nam,VIEWCOUNT,//div[@class='x293']/span[1]/text(x293
+162,?y ban dân t?c,TITLE,//h3/span/text()
+163,?y ban dân t?c,VIEWCOUNT,//div[@class='row news-info']/div[1]/div[1]/span[2]/text()
+164,?y ban dân t?c,TITLE,//h4[@class='news-item-page']/span/text()
+165,?y ban dân t?c,ABSTRACT,//p[1]/em/strong/text()
+166,?y ban dân t?c,CONTENT,"//div[contains(@id, 'divNewsDetails')]"
+167,?y ban dân t?c,HEAD_PARAGRAPH,"//p[contains(@style,'text-align: justify;')]/em/strong/text() | //p[contains(@style,'text-align: justify;')]/strong/em/text()"
+168,?y ban dân t?c,AUTHOR,//p[@class='pull-right']/span/text()
+173,vovworld.vn Viet,TITLE,//header/h1/text()
+174,vovworld.vn Viet,ABSTRACT,//article/div[@class='article__sapo cms-desc']/div/text()
+175,vovworld.vn Viet,CONTENT,//div[@class='article__body cms-body']
+176,vovworld.vn Viet,AUTHOR,//p[@class='cms-author']/text()
+177,vovworld.vn Viet,IMAGE_DESC,//table[@class='body-image wide-image']/tbody/tr/td/span/text() | //span[@class='desc']/text() | //span[@class='desc']/em/text()
+178,vovworld.vn Viet,TAGS,//div[@class='article__tagCloud']/p/a/@title
+179,Vietnam - Lao,DATA_TIME_STR,//time/text()
+180,vovworld.vn Viet,IMAGE_URL,//table/tbody/tr/td/a/img/@src

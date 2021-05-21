@@ -1,0 +1,39 @@
+fieldName,typeSelector,findJson,selector,root_id
+TITLE,HTML,None,//div[@class='padding_block single-title']/h1,54
+AUTHOR,HTML,None,//p[@class='credit'],54
+DATA_TIME_STR,HTML,None,//time,54
+CONTENT,HTML,None,//div[@id='jtarticle'],54
+TAGS,HTML,None,//h3[@class='single-post-categories'],54
+TITLE,HTML,None,//h1[@class='headline'],55
+AUTHOR,HTML,None,//div[@class='author-byline']/span,55
+DATA_TIME_STR,JSON,application/ld+json,datePublished/,55
+CONTENT,HTML,None,//div[@class='article-content']/div[@class='article-body'],55
+TAGS,HTML,None,//header[@class='article-header']/div/div[@class='eyebrow'],55
+TITLE,JSON,application/ld+json,headline/,56
+AUTHOR,JSON,application/ld+json,author/name/,56
+DATA_TIME_STR,JSON,application/ld+json,datePublished/,56
+CONTENT,HTML,None,//div[@class='ArticleBodyWrapper'],56
+TAGS,HTML,None,//div[@class='ArticleHeader-info-container-3-6YG'],56
+TITLE,HTML,None,//h1[@class='ArticleHeader-headline'],57
+AUTHOR,HTML,None,//div[@class='Author-authorNameAndSocial']/a[@class='Author-authorName'],57
+DATA_TIME_STR,HTML,None,//time,57
+CONTENT,HTML,None,//div[@class='ArticleBody-articleBody'],57
+TAGS,HTML,None,//a[@class='ArticleHeader-eyebrow'],57
+TITLE,HTML,None,//div[@class='article_title'],58
+AUTHOR,HTML,None,//span[@class='byline'],58
+DATA_TIME_STR,HTML,None,//span[@class='pub_time'],58
+CONTENT,HTML,None,//div[@class='article_content'],58
+TAGS,HTML,None,//div[@class='article_column'],58
+IMAGE_URL,HTML,None,//div[@id='slideshow_and_video'],54
+IMAGE_URL,HTML,None,"//div[contains(@class, 'article-body')]",55
+IMAGE_URL,JSON,application/ld+json,image/url/,56
+IMAGE_URL,HTML,None,//picture,57
+IMAGE_URL,HTML,None,"//div[contains(@class, 'article_right')]",58
+HEAD_PARAGRAPH,HTML,None,//div[@class='group'],57
+TITLE,HTML,None,//h1[@class='post-headline '],59
+AUTHOR,HTML,None,//div[@class='byline-row']/div[@class='byline-author-container']/div[@class='byline-author headline-bold'],59
+DATA_TIME_STR,HTML,None,//div[@class='byline-row']/div[@class='byline-author-container']/div[@class='byline-timestamp headline-regular js-date-format js-rendered'],59
+CONTENT,HTML,None,"//section[@id='l-content']//section[@class='row']/div[contains(@class, 'col-12')]/article",59
+TAGS,HTML,None,//section[@class='post-content-category'],59
+IMAGE_URL,HTML,None,"//section[@id='l-content']//section[@class='row']/div[contains(@class, 'col-12')]/article",59
+HEAD_PARAGRAPH,HTML,None,//ul[@class='summary-list'],59
